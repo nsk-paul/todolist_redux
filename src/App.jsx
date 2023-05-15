@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './App.css';
 import ToForm from './components/ToForm';
 import Todos from './components/Todos';
@@ -37,3 +38,34 @@ function App() {
 }
 
 export default App;
+=======
+import React from 'react'
+
+import HomePage from './pages/HomePage.jsx';
+import CompletedPage from './pages/CompletedPage.jsx';
+import UnCompletedPage from './pages/UnCompletedPage.jsx';
+import { Route,createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import EditPage from './pages/EditPage.jsx';
+import RootLayout from './layouts/RootLayout.jsx';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout/>}>
+      <Route index element={<HomePage/>}/>
+      <Route path="completed" element={<CompletedPage/>}/>
+      <Route path="uncompleted" element={<UnCompletedPage/>}/>
+      <Route path="edit/:id" element={<EditPage/>}/>
+    </Route>
+  )
+)
+
+function App() {
+  return (
+    
+    <RouterProvider router={router}/>
+    
+  )
+}
+
+export default App
+>>>>>>> e055ced (full version)

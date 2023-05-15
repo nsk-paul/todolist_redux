@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
   }
+<<<<<<< HEAD
+=======
+  :root {
+    --primary: #bc4123;
+    --secondary: #2b3452;
+  }
+>>>>>>> e055ced (full version)
   
   .wrapper{
     max-width: 1440px;
@@ -63,4 +70,30 @@
   .back-btn{
     margin-top: 5px;
     width: 100%;
+<<<<<<< HEAD
+=======
+  }
+
+  header nav{
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+    max-width: 1200px;
+    margin: 0 auto
+  }
+
+  header nav h1{
+    margin-right: auto;
+    border-bottom: 3px solid var(--primary) ;
+  }
+
+  header nav a {
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+  }
+
+  header nav a.active{
+    background: #F5F0BB;
+>>>>>>> e055ced (full version)
   }
